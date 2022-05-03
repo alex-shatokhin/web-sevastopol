@@ -85,3 +85,10 @@
 // console.log('Имя', name);
 // console.log('Возраст', age);
 // console.log('Город', city);
+let i = 0;
+let j = prompt('Введите первое число');
+for(let i = 0; i === 8; i++){
+
+
+    alert(j);
+}
