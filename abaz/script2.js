@@ -328,109 +328,109 @@ for(let i = 0; i <= 100; i++) {
         break;
        case '/':
         result = num1 / num2;
-        break;
-    }
-  }
+//         break;
+//     }
+//   }
 
-  */
-//  Задания № 1
+//   */
+// //  Задания № 1
 
-let numb1 = prompt("Введите первое число");
+// let numb1 = prompt("Введите первое число");
 
-let znak = prompt("Действие: /,-,*,+");
+// let znak = prompt("Действие: /,-,*,+");
 
-let numb2 = prompt("Введите второе число");
+// let numb2 = prompt("Введите второе число");
 
-alert(calc(numb1, znak, numb2));
-let numb3 = calc(numb1, znak, numb2);
+// alert(calc(numb1, znak, numb2));
+// let numb3 = calc(numb1, znak, numb2);
 
-while (1) {
-  if (confirm("Продолжаем работу с числом? (Да/Нет)")) {
-    let znak = prompt("Выбери действие: /,-,*,+");
-    let numb2 = prompt("Введите второе число");
-    alert(calc(numb3, znak, numb2));
-    numb3 = calc(numb3, znak, numb2);
-  } else {
-    alert("Слабак");
-    break;
-  }
+// while (1) {
+//   if (confirm("Продолжаем работу с числом? (Да/Нет)")) {
+//     let znak = prompt("Выбери действие: /,-,*,+");
+//     let numb2 = prompt("Введите второе число");
+//     alert(calc(numb3, znak, numb2));
+//     numb3 = calc(numb3, znak, numb2);
+//   } else {
+//     alert("Слабак");
+//     break;
+//   }
 
-  if (numb3 === 100) {
-    alert("Ты попал в ловушку ХА ХА ХА!!!");
-    // let i = 0;
-    // //       do{
-    // //           let a = prompt('Сколько ног и рук у осминога? Ответ:?');
-    // //             i++;
-    // //             alert(a);
-    // //       }while(a === 8);
-  }
-  //       {        // alert('Пока');break;
-  else alert("ТЫ НА ВСЕГДА ОСТАНЕШЬСЯ ЗДЕСЬ!!!");
-  //       }
-}
-//       // if (numb3 === (100 - k)){
+//   if (numb3 === 100) {
+//     alert("Ты попал в ловушку ХА ХА ХА!!!");
+//     // let i = 0;
+//     // //       do{
+//     // //           let a = prompt('Сколько ног и рук у осминога? Ответ:?');
+//     // //             i++;
+//     // //             alert(a);
+//     // //       }while(a === 8);
+//   }
+//   //       {        // alert('Пока');break;
+//   else alert("ТЫ НА ВСЕГДА ОСТАНЕШЬСЯ ЗДЕСЬ!!!");
+//   //       }
+// }
+// //       // if (numb3 === (100 - k)){
 
-//      // let k = (20);
+// //      // let k = (20);
 
-//      // alert("Ты все ближе к сокровищам !!!");
+// //      // alert("Ты все ближе к сокровищам !!!");
 
-// //     // }
-function calc(x, y, z) {
-  let result = 0;
-  switch (y) {
-    case "+":
-      result = Number(x) + Number(z);
-      break;
-    case "-":
-      result = x - z;
-      break;
-    case "*":
-      result = x * z;
-      break;
-    case "/":
-      result = x / z;
-      break;
-  }
-  return result;
-}
+// // //     // }
+// function calc(x, y, z) {
+//   let result = 0;
+//   switch (y) {
+//     case "+":
+//       result = Number(x) + Number(z);
+//       break;
+//     case "-":
+//       result = x - z;
+//       break;
+//     case "*":
+//       result = x * z;
+//       break;
+//     case "/":
+//       result = x / z;
+//       break;
+//   }
+//   return result;
+// }
 
-//  сортировка массивов по возраст Задания 2
+// //  сортировка массивов по возраст Задания 2
 
-let arr = [5, 2, 1, 18, -10, 8, -1, 123];
+// let arr = [5, 2, 1, 18, -10, 8, -1, 123];
 
-arr.sort((a, b) => a - b);
+// arr.sort((a, b) => a - b);
 
-alert(arr);
+// alert(arr);
 
 //  Задания 2
 
-let a = [8, -1, 35, -23, 7, 10, 0];
-// let b = [1, 2, 3, 4, 7, 10, 110];
+// let a = [8, -1, 35, -23, 7, 10, 0];
+// // let b = [1, 2, 3, 4, 7, 10, 110];
 
-function swap(ar, x, y) {
-  let j = ar[y];
-  ar[y] = ar[x];
-  ar[x] = j;
-}
+// function swap(ar, x, y) {
+//   let j = ar[y];
+//   ar[y] = ar[x];
+//   ar[x] = j;
+// }
 
-function sort(k) {
-  let n = 1;
-  while (n) {
-    for (let j = 1; j < k.length; j++) {
-      if (k[j - 1] > k[j]) {
-        swap(k, j, j - 1);
-        n++;
-      }
-    }
-    if (n > 1) { n = 1;
-    } else { n = 0;
-    }
-  }
-}
+// function sort(k) {
+//   let n = 1;
+//   while (n) {
+//     for (let j = 1; j < k.length; j++) {
+//       if (k[j - 1] > k[j]) {
+//         swap(k, j, j - 1);
+//         n++;
+//       }
+//     }
+//     if (n > 1) { n = 1;
+//     } else { n = 0;
+//     }
+//   }
+// }
 
-alert(a);
-sort(a);
-alert(a);
+// alert(a);
+// sort(a);
+// alert(a);
 
 // alert(a);
 // swap(a,0,1);
@@ -444,3 +444,48 @@ for(let a = 0; a = a - b) {
 
 
 */
+
+// const abaz = function(){
+
+//   alert ('Привет') = abaz;
+  
+  
+//   };
+//   const abaz2 = abaz;
+//   console.log(abaz===abaz2);
+
+
+
+
+//   let x,b;
+//   let test;
+//   while(1){
+// if(
+
+
+
+//   (x>b){
+
+
+//     test = function(){
+
+
+//       console.log(a);
+//     }
+//   } else{
+//     test = function(){
+
+
+//       console.log(a);
+//     }
+
+
+
+//   }
+// }
+
+
+
+
+  
+//   test();  
