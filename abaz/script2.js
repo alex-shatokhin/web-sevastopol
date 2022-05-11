@@ -446,16 +446,73 @@ for(let a = 0; a = a - b) {
 */
 
 
-const pow = function (a,b) {
-    // if(b<0) //если степень <1
-    //     return 1/a * pow(a,b+1);
+// const pow = function (a,b) {
+//     // if(b<0) //если степень <1
+//     //     return 1/a * pow(a,b+1);
 
-    if (b==0)
-         return 1; 
+//     if (b==0)
+//          return 1; 
 
-   // if(b>0) //если степень >1
-     return a * pow(a,b - 1);
+//    // if(b>0) //если степень >1
+//      return a * pow(a,b - 1);
+//   }
+
+//   console.log(pow(4,2)); 
+
+// ask() =>  () ? yes : No();
+
+
+/* задание 1 клонирование объекта */
+const obj1 = {
+  name: "alex",
+  age: 25,
+};
+
+const clone = function (obj) {
+  let obj_temp = {};
+  for (let key in obj) {
+    obj_temp[key] = obj[key];
   }
+  return obj_temp;
+};
+const obj2 = clone(obj1);
+//alert(obj2.name);
+//alert(obj2.age);
 
-  console.log(pow(4,2)); 
-  
+/* задание 2 удаление из объекта ключа */
+const without = function (obj, key_del) {
+  let obj_temp = {};
+  for (let key in obj) {
+    if (key === key_del) continue;
+    obj_temp[key] = obj[key];
+  }
+  return obj_temp;
+};
+const obj3 = without(obj1, "age");
+//alert(obj3.name);
+//alert(obj3.age);
+
+/* задание 3 сравнение 2х объектов */
+const data1 = { a: 1, b: 1 };
+const data2 = { a: 1, b: 1 };
+const data3 = { a: 1, b: 2 };
+const compare = function (firstObj, SecondObj) {
+  for (let key in firstObj) {
+    if (firstObj[key] !== SecondObj[key]) {
+      return false;
+    }
+  }
+  return true;
+};
+
+/* Задание 4 нахождение пересечений */
+const dat1 = { a: 1, b: 2 };
+const dat2 = { c: 1, b: 2 };
+const intersection = function (firstObj, SecondObj) {
+  for (let key in firstObj) {
+    if (firstObj[key] === SecondObj[key]) {
+      return `${key} : ${firstObj[key]}`;
+    }
+  }
+  return false;
+};
