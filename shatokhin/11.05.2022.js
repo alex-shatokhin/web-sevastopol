@@ -140,3 +140,28 @@
 // user.setName('Петя');
 // user.getName();
 
+// function Product(name, weight, price, count){
+//     this.name = name;
+//     this.weight = weight;
+//     this.price = price;
+//     this.count = count;
+//
+//     this.getProp = function (prop) {
+//         if (this[prop]) {
+//             console.log(this[prop]);
+//         }
+//     }
+//
+//     this.setProp = function (prop, value) {
+//         if (this[prop]) {
+//             this[prop] = value;
+//         }
+//     }
+// }
+//
+// let product = new Product('Мясо', 150, 300, 10);
+//
+// product.getProp('name');
+// product.setProp('weight', 145);
+// product.getProp('weight');
+
