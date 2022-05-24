@@ -77,26 +77,26 @@
 // https://blog.ru/posts/ список всех записей
 // https://blog.ru/post/1 адрес конкретной записи в блоге
 
-let post_id = 1;
-
-let dataBase = [
-    {
-        id: 1,
-        title: 'Блог запись 1',
-    },
-    {
-        id: 2,
-        title: 'Блог запись 2',
-    },
-    {
-        id: 3,
-        title: 'Блог запись 3',
-    },
-];
-
-
-let result = dataBase.find((post) => {
-    return post.id === post_id;
-});
-
-console.log(result.title);
+// let post_id = 1;
+//
+// let dataBase = [
+//     {
+//         id: 1,
+//         title: 'Блог запись 1',
+//     },
+//     {
+//         id: 2,
+//         title: 'Блог запись 2',
+//     },
+//     {
+//         id: 3,
+//         title: 'Блог запись 3',
+//     },
+// ];
+//
+//
+// let result = dataBase.find((post) => {
+//     return post.id === post_id;
+// });
+//
+// console.log(result.title);
