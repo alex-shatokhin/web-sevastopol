@@ -24,3 +24,25 @@
 
 // let arr = [1, 2, 3].fill(0, 0, 3);
 // console.log(arr);
+
+// function camelize1(str) {
+//     let g = str.split('-');
+//     const text = 'background-color';
+//     console.log(text.toUpperCase());
+// }
+
+// let camelize2 = 'background-color'
+// let arr = camelize2.split('-');
+// for (let camelize of arr){
+//
+//     alert( ${camelize} );
+// }
+
+// const camelize = (str) => {
+//     return str.split('-').map(
+//         (word, index) => {
+//             return index === 0 ? word : word[0].toUpperCase() + word.slice(1)
+//         }).join('');
+// };
+//
+// console.log(camelize('-webkit-transition'));
