@@ -1,0 +1,11 @@
+@import "./normalize.css";
+@import "./colors.css";
+@import "./common.css";
+@import "./header.css";
+@import "./slider.css";
+@import "./nav-bar.css";
+@import "./content.css";
+@import "./cart.css";
+@import "./footer.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
