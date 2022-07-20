@@ -1,0 +1,123 @@
+.content {
+  flex: 3 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid var(--light-border);
+  border-right: 1px solid var(--light-border);
+}
+
+.section-heading {
+  margin-top: 40px;
+  color: var(--text-headline);
+}
+
+.products-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: space-between;
+  padding: 2%;
+  list-style: none;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22%;
+  margin-bottom: 40px;
+}
+
+.product-card img {
+  max-width: 100%;
+  padding: 30px;
+}
+
+.h2 {
+  color: var(--text-headline);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: var(--grey-border-dashed);
+  border-bottom: var(--grey-border-dashed);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-options {
+  border: none;
+  font-size: var(--text-sm);
+  background-color: transparent;
+}
+
+.card-options:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.right-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: end;
+}
+
+.price {
+  font-size: var(--text-md);
+}
+
+.card-form-btn {
+  padding: 8px 15px;
+  border-radius: 7px;
+  border: none;
+  color: var(--text-btn);
+  background-color: var(--bg-btn);
+  font-weight: 700;
+  transition: var(--transition-btn);
+}
+
+.card-form-btn:hover {
+  background-color: var(--hover);
+}
+
+@media screen and (max-width: 1770px) {
+  .product-card {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-card {
+    width: 45%;
+  }
+
+  .products-list {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    max-width: 100vw;
+    border: none;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+}

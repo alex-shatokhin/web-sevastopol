@@ -159,3 +159,27 @@ function unique(arr) {
     return accum
   }, [])
 }
+
+
+// DOP
+
+const PROXYS = `
+45.153.227.238:63524:admin:123
+45.138.4.86:60026:admin:123
+176.222.58.119:61558:admin:123
+45.144.0.154:50508:admin:123
+45.150.112.148:54299:admin:123
+`;
+const headers = ['ip', 'port', 'user', 'password']
+
+
+function urlParse(str) {
+  let arr = str.trim().split('\n')
+
+  return arr.map( item => {
+    return item.split(':').reduce( (acc, value, idx) => ({
+      ...acc, [headers[idx]]: value
+    }), {})
+  })
+}
+console.log(urlParse(PROXYS));

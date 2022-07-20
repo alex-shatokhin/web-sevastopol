@@ -1,0 +1,40 @@
+html[data-theme="light"] {
+  --bg-main: #f6f6f6;
+  --bg-secondary: var(--white);
+  --secondary: #9f9f9f;
+  --dark-main: #3d3d3d;
+  --white: #fff;
+  
+  --text-main: var(--dark-main);
+  --text-headline: var(--text-main);
+  --text-btn: var(--white);
+  --bg-btn: var(--dark-main);
+
+  --light-border: #d0d0d0;
+  --grey-border-solid: 1px solid rgba(61, 61, 61, 0.2);
+  --grey-border-dashed: 1px dashed rgba(61, 61, 61, 0.2);
+
+  --hover: #f6c216;
+  --svg-fill: var(--dark-main);
+}
+
+
+html[data-theme="dark"] {
+  --bg-main: #1a1a1d;
+  --bg-secondary: #1d1d21;
+  --secondary: #3e4859;
+  --dark-main: var(--bg-main);
+  --white: #fff;
+
+  --text-main: #ababab;
+  --text-headline: #eef5f8;
+  --text-btn: var(--bg-main);
+  --bg-btn: #ffaa00;
+
+  --light-border: var(--bg-main);
+  --grey-border-solid: 1px solid var(--secondary);
+  --grey-border-dashed: 1px dashed var(--secondary);
+
+  --hover: #ffcc00;
+  --svg-fill: var(--text-main);
+}
