@@ -1,0 +1,14 @@
+html[data-theme="light"] {
+--link-color:rgb(188, 28, 121);
+--padding-div: 20px  20px  20px;
+--header-color: rgb(235, 222, 230);
+
+}
+
+html[data-theme="dark"] {
+    --link-color:rgb(188, 28, 121);
+    --padding-div: 20px  20px  20px;
+    --header-color: rgb(21, 178, 0);
+    
+    }
+    

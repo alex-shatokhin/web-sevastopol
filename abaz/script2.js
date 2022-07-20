@@ -414,105 +414,166 @@ for(let i = 0; i <= 100; i++) {
 // }
 
 // function sort(k) {
-//   let n = 1;
-//   while (n) {
-//     for (let j = 1; j < k.length; j++) {
-//       if (k[j - 1] > k[j]) {
-//         swap(k, j, j - 1);
-//         n++;
-//       }
-//     }
-//     if (n > 1) { n = 1;
-//     } else { n = 0;
-//     }
-//   }
+// //   let n = 1;
+// //   while (n) {
+// //     for (let j = 1; j < k.length; j++) {
+// //       if (k[j - 1] > k[j]) {
+// //         swap(k, j, j - 1);
+// //         n++;
+// //       }
+// //     }
+// //     if (n > 1) { n = 1;
+// //     } else { n = 0;
+// //     }
+// //   }
+// // }
+
+// // alert(a);
+// // sort(a);
+// // alert(a);
+
+// // alert(a);
+// // swap(a,0,1);
+// // alert(a);
+// /*
+// for(let a = 0; a = a - b) {
+
+
+
 // }
 
-// alert(a);
-// sort(a);
-// alert(a);
 
-// alert(a);
-// swap(a,0,1);
-// alert(a);
-/*
-for(let a = 0; a = a - b) {
+// */
 
+// // const pow = function (a,b) {
+// //     // if(b<0) //если степень <1
+// //     //     return 1/a * pow(a,b+1);
 
+// //     if (b==0)
+// //          return 1;
 
-}
+// //    // if(b>0) //если степень >1
+// //      return a * pow(a,b - 1);
+// //   }
 
+// //   console.log(pow(4,2));
 
-*/
+// // ask() =>  () ? yes : No();
 
+// /* задание 1 клонирование объекта */
+// const obj1 = {
+//   name: "alex",
+//   age: 25,
+// };
 
-// const pow = function (a,b) {
-//     // if(b<0) //если степень <1
-//     //     return 1/a * pow(a,b+1);
-
-//     if (b==0)
-//          return 1; 
-
-//    // if(b>0) //если степень >1
-//      return a * pow(a,b - 1);
+// const clone = function (obj) {
+//   let obj_temp = {};
+//   for (let key in obj) {
+//     obj_temp[key] = obj[key];
 //   }
+//   return obj_temp;
+// };
+// const obj2 = clone(obj1);
+// //alert(obj2.name);
+// //alert(obj2.age);
 
-//   console.log(pow(4,2)); 
+// /* задание 2 удаление из объекта ключа */
+// const without = function (obj, key_del) {
+//   let obj_temp = {};
+//   for (let key in obj) {
+//     if (key === key_del) continue;
+//     obj_temp[key] = obj[key];
+//   }
+//   return obj_temp;
+// };
+// const obj3 = without(obj1, "age");
+// //alert(obj3.name);
+// //alert(obj3.age);
 
-// ask() =>  () ? yes : No();
+// /* задание 3 сравнение 2х объектов */
+// const data1 = { a: 1, b: 1 };
+// const data2 = { a: 1, b: 1 };
+// const data3 = { a: 1, b: 2 };
+// const compare = function (firstObj, SecondObj) {
+//   for (let key in firstObj) {
+//     if (firstObj[key] !== SecondObj[key]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+// //alert(compare(data1,data2));
+
+// /* Задание 4 нахождение пересечений */
+// const dat1 = { a: 1, b: 2 };
+// const dat2 = { c: 1, b: 2 };
+// const intersection = function (firstObj, SecondObj) {
+//   for (let key in firstObj) {
+//     if (firstObj[key] === SecondObj[key]) {
+//       return `${key} : ${firstObj[key]}`;
+//     }
+//   }
+//   return false;
+// };
+// //alert(intersection(dat1,dat2));
+
+// /* Задание 1 последние 3 символа ... если длина строки больше maxlength*/
+//  const truncate = function (str, maxlength) {   let str_new = "";
+//    if (str.length > maxlength) {
+//      for (let i = 0; i < maxlength - 3; i++) {
+//        str_new += str[i];
+//     }
+//      for (let i = 0; i < 3; i++) str_new = str_new + ".";
+//      return str_new;
+//    }
+//    return str;
+//  };
+//  let str = "123456789";
+// //alert(truncate(str, 8));
+
+// /* Задание 2 спам лист */
+// let spamlist = ["Viagra", "XXX"];
+// const checkSpam = function (str) {
+//   let str_lower = str.toLowerCase();
+//   //alert(str.toLowerCase());
+//   for (let i in spamlist) {
+//     if (str_lower.includes(spamlist[i].toLowerCase())) return true;
+//     //if(str.indexOf(spamlist[i]) str.toLowerCase());
+//   }
+//   return false;
+// };
+// //alert(checkSpam("By ViaGRa now"));
+
+// /*Задание 3 заглавная первая буква */
+// const ucfirst = function (str) {
+//   let str_c = str[0].toUpperCase();
+//   for (let i = 1; i < str.length; i++) str_c += str[i];
+//   return str_c;
+// };
+// //alert(ucfirst("qwerty"));
+
+// /* Задание 5 ввод данных */
+
+// const readNumber = function () {
+//   let number = prompt("Введите число:  ");
+//   return number;
+// };
+// alert(readNumber());
 
 
-/* задание 1 клонирование объекта */
-const obj1 = {
-  name: "alex",
-  age: 25,
-};
 
-const clone = function (obj) {
-  let obj_temp = {};
-  for (let key in obj) {
-    obj_temp[key] = obj[key];
-  }
-  return obj_temp;
-};
-const obj2 = clone(obj1);
-//alert(obj2.name);
-//alert(obj2.age);
 
-/* задание 2 удаление из объекта ключа */
-const without = function (obj, key_del) {
-  let obj_temp = {};
-  for (let key in obj) {
-    if (key === key_del) continue;
-    obj_temp[key] = obj[key];
-  }
-  return obj_temp;
-};
-const obj3 = without(obj1, "age");
-//alert(obj3.name);
-//alert(obj3.age);
+// const ucfirst = function (str) {
+//        let str_c = str[0].toUpperCase();
+//       for (let i = 1; i < str.length; i++) str_c += str[i];
+//        return str_c;
+//      };
 
-/* задание 3 сравнение 2х объектов */
-const data1 = { a: 1, b: 1 };
-const data2 = { a: 1, b: 1 };
-const data3 = { a: 1, b: 2 };
-const compare = function (firstObj, SecondObj) {
-  for (let key in firstObj) {
-    if (firstObj[key] !== SecondObj[key]) {
-      return false;
-    }
-  }
-  return true;
-};
+// let camelize("background-color")
 
-/* Задание 4 нахождение пересечений */
-const dat1 = { a: 1, b: 2 };
-const dat2 = { c: 1, b: 2 };
-const intersection = function (firstObj, SecondObj) {
-  for (let key in firstObj) {
-    if (firstObj[key] === SecondObj[key]) {
-      return `${key} : ${firstObj[key]}`;
-    }
-  }
-  return false;
-};
+let camelize = 'background-color'
+let arr = camelize.split('-');
+for (let camelize of arr){}
+
+alert($ {camelize});
+     
