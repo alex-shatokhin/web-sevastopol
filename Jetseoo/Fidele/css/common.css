@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-main);
+  text-decoration: none;
+  transition: 
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out,
+    border 0.2s ease-in-out;
+}
+
+body {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  background-color: var(--bg-secondary);
+}
+
+button,
+select,
+input[type="radio"],
+input[type="radio"] + label {
+  cursor: pointer;
+}
+
+:root {
+  --transition-link: color .2s ease-in-out;
+  --transition-btn: background-color .2s ease-in-out;
+  --section-start-gap: 40px;
+  --text-sm: 14px;
+  --text-md: 20px;
+}
